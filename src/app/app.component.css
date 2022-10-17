@@ -1,0 +1,103 @@
+.container-fluid {
+  background-color: #256d85;
+  min-height: 100vh;
+  color: #f4f4f4;
+}
+.search-box {
+  width: 25%;
+  display: block;
+  margin: 2rem auto 7rem auto;
+}
+.search-box input {
+  width: 85%;
+  border: none;
+  outline: none;
+  background: #256d85;
+  box-shadow: inset 20px 20px 60px #1f5d71, inset -20px -20px 60px #2b7d99;
+  color: #f4f4f4;
+}
+.search-box input::placeholder {
+  color: #f4f4f4;
+}
+.search-box button {
+  width: fit-content;
+  border: none;
+  color: #f4f4f4;
+  background: linear-gradient(145deg, #216278, #28758e);
+  box-shadow: 20px 20px 60px #1f5d71, -20px -20px 60px #2b7d99;
+}
+.search-box button.night {
+  background: linear-gradient(145deg, #282828, #212121);
+  box-shadow: 20px 20px 60px #1f1f1f, -20px -20px 60px #2b2b2b;
+}
+.weather-card {
+  display: block;
+  margin: 0 auto;
+  min-height: 50vh;
+  border-radius: 25px;
+  background: #256d85;
+  box-shadow: 20px 20px 60px #1f5d71, -20px -20px 60px #2b7d99;
+}
+video {
+  width: 100%;
+}
+.video-mask {
+  width: fit-content;
+  overflow: hidden;
+}
+.search-box input.night {
+  background: #252525;
+  box-shadow: inset 20px 20px 60px #1f1f1f, inset -20px -20px 60px #2b2b2b;
+}
+.weather-card.night {
+  background: #252525;
+  box-shadow: 8px 8px 16px #1f1f1f, -8px -8px 16px #2b2b2b;
+}
+.container-fluid.night {
+  background-color: #252525;
+}
+
+/* Animation */
+/* KEYFRAMES */
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(359deg);
+  }
+}
+
+.spinner-box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+
+.circle-border {
+  width: 150px;
+  height: 150px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgb(63,249,220);
+  background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(63,249,220,1) 100%);
+  animation: spin .8s linear 0s infinite;
+}
+
+.circle-core {
+  width: 100%;
+  height: 100%;
+  background-color: #252525;
+  border-radius: 50%;
+}
+
+
